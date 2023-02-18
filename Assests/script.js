@@ -8,7 +8,7 @@ var p6El = document.createElement('p');
 
 // Various HTML tags and elements
 var h1El = document.createElement('h1');
-var btnEl = document.createElement('button');
+var btnEl = document.createElement('div');
 var headEl = document.createElement('header');
 var mainEl = document.createElement('main');
 
@@ -17,6 +17,25 @@ var Oli1 = document.createElement('ol');
 var Oli2 = document.createElement('ol');
 var Oli3 = document.createElement('ol');
 var Oli4 = document.createElement('ol');
+
+// Appending tags and elements to HTML
+// Paragraphs 
+body.appendchild(pEl);
+body.appendchild(p2El);
+body.appendchild(p3El);
+body.appendchild(p4El);
+body.appendchild(p5El);
+body.appendchild(p6El);
+// List
+body.appendchild(Oli1);
+body.appendchild(Oli2);
+body.appendchild(Oli3);
+body.appendchild(Oli4);
+// Button
+body.appendchild(btnEl);
+// Header
+body.appendchild(headEl);
+
 
 // Creating text content for each quiz question
 pEl.textContent = 'Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your scoretime by ten seconds!';
