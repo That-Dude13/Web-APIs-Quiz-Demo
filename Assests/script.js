@@ -6,30 +6,58 @@ var p4El = document.createElement('p');
 var p5El = document.createElement('p');
 var p6El = document.createElement('p');
 
-
+// Various HTML tags and elements
 var h1El = document.createElement('h1');
 var btnEl = document.createElement('button');
 var headEl = document.createElement('header');
 var mainEl = document.createElement('main');
 
 // Create ordered list
-var li1 = document.createElement('li');
-var li2 = document.createElement('li');
-var li3 = document.createElement('li');
-var li4 = document.createElement('li');
+var Oli1 = document.createElement('ol');
+var Oli2 = document.createElement('ol');
+var Oli3 = document.createElement('ol');
+var Oli4 = document.createElement('ol');
 
 // Creating text content for each quiz question
-pEl.textContent = "Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your scoretime by ten seconds!";
-p2El.textContent = "Commonly used data types DO NOT include:";
-p3El.textContent = "The condition in an if/else statement is enclosed with ___________ ."
-p4El.textContent = "Arrays in JavaSrcipt can be used to store ________ ."
-p5El.textContent = "String values must be enclosed within _______ when assisging variables."
-p6El.textContent = "A very useful tool used during development and debugging for printing content to the debugger is:"
+pEl.textContent = 'Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your scoretime by ten seconds!';
+p2El.textContent = 'Commonly used data types DO NOT include:';
+p3El.textContent = 'The condition in an if/else statement is enclosed with ___________ .'
+p4El.textContent = 'Arrays in JavaSrcipt can be used to store ________ .'
+p5El.textContent = 'String values must be enclosed within _______ when assisging variables.'
+p6El.textContent = 'A very useful tool used during development and debugging for printing content to the debugger is:'
+
+// Question 1 answers
+Oli1.textContent = 'strings'
+Oli2.textContent = 'boolean'
+Oli3.textContent = 'alerts'
+Oli4.textContent = 'numbers'
+
+// Question 2 answers 
+Oli1.textContent = 'quotes'
+Oli2.textContent = 'curly brackets'
+Oli3.textContent = 'parentheses'
+Oli4.textContent = 'square brackets'
+
+// Question 3 answers 
+Oli1.textContent = 'numbers and strings'
+Oli2.textContent = 'other arrays'
+Oli3.textContent = 'booleans'
+Oli4.textContent = 'all of the above'
+
+// Question 4 answers
+Oli1.textContent = 'commas'
+Oli2.textContent = 'curly brackets'
+Oli3.textContent = 'quotes'
+Oli4.textContent = 'parentheses'
+
+// Question 5 answers 
+Oli1.textContent = 'JavaScript'
+Oli2.textContent = 'terminial bash'
+Oli3.textContent = 'for loops'
+Oli4.textContent = 'console.log'
 
 
-
-
-
+// Timer Creation 
 var timeEl = document.querySelector('.time');
 
 // Time by ID
@@ -65,7 +93,7 @@ function setTime() {
 //  Right or wrong will be displayed once a button is clicked with a horizontal line underneath the boolean 
 //  User initials and highscore must be stored in local storage 
 //  Preventing default refresh must be implemented on the form 
-//  When you click "Go Back" at the end of the quiz, you are taken back to the tilte screen 
+//  When you click 'Go Back' at the end of the quiz, you are taken back to the tilte screen 
 //  All questions must be in p> elements/tags 
 //  Timer must decrement by one second while test is running 
 //  Upon wrong answer 17 seconds is subtracted from timer
