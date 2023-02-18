@@ -1,4 +1,12 @@
-var pEl = document.createElement('p>');
+// Creating different P tags 
+var pEl = document.createElement('p');
+var p2El = document.createElement('p');
+var p3El = document.createElement('p');
+var p4El = document.createElement('p');
+var p5El = document.createElement('p');
+var p6El = document.createElement('p');
+
+
 var h1El = document.createElement('h1');
 var btnEl = document.createElement('button');
 var headEl = document.createElement('header');
@@ -10,7 +18,13 @@ var li2 = document.createElement('li');
 var li3 = document.createElement('li');
 var li4 = document.createElement('li');
 
-// Creating differ P tags for each quiz question
+// Creating text content for each quiz question
+pEl.textContent = "Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your scoretime by ten seconds!";
+p2El.textContent = "Commonly used data types DO NOT include:";
+p3El.textContent = "The condition in an if/else statement is enclosed with ___________ ."
+p4El.textContent = "Arrays in JavaSrcipt can be used to store ________ ."
+p5El.textContent = "String values must be enclosed within _______ when assisging variables."
+p6El.textContent = "A very useful tool used during development and debugging for printing content to the debugger is:"
 
 
 
