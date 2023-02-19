@@ -1,10 +1,20 @@
-document.getElementById('title'); 
-document.getElementById('choices'); 
-document.getElementById('answers'); 
+document.getElementById('title'); //Quiz quetions
+document.getElementById('choices'); //Quiz choices
+document.getElementById('answers'); //Quiz answers
+document.getElementById(button).addEventListener('click', )
 
-document.querySelector(button);
-document.querySelector(.container);
-document.querySelector(.)
+document.querySelector('#header'); //element created for timer 
+document.querySelector('.time'); //element created for timer 
+document.querySelector(main); //element created for timer 
+document.querySelector(button); //Buttons to be used throughout quiz 
+document.querySelector('.container'); //contains quiz question elements
+document.querySelector('.pEl'); // Quiz opening title page 
+document.querySelector('.pE2'); // Quiz question 1 
+document.querySelector('.pE3'); // Quiz question 2 
+document.querySelector('.pE4'); // Quiz question 3 
+document.querySelector('.pE5'); // Quiz question 4 
+document.querySelector('.pE6'); // Quiz question 5
+
 
 
 
@@ -36,3 +46,8 @@ const questions = [
 
     },
 ];
+
+for ('answers') {
+    
+}
+ 
