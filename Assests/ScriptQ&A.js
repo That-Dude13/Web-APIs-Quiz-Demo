@@ -47,7 +47,7 @@ const questions = [
     },
 ];
 
-for ('answers') {
+const answers = [
     
-}
+]
  
