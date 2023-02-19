@@ -1,3 +1,10 @@
+document.getElementById('title'); 
+document.getElementById('choices'); 
+document.getElementById('answers'); 
+
+document.querySelector(button);
+document.querySelector(.container);
+document.querySelector(.)
 
 
 
