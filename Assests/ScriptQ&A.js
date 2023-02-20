@@ -1,7 +1,8 @@
 document.getElementById('title'); //Quiz quetions
 document.getElementById('choices'); //Quiz choices
 document.getElementById('answers'); //Quiz answers
-//document.getElementById(button).addEventListener('click', )
+document.getElementById(button).addEventListener('click', ("") );
+
 
 document.querySelector('#header'); //element created for timer 
 document.querySelector('.time'); //element created for timer 
@@ -48,6 +49,5 @@ const questions = [
 ];
 
 const answers = [
-
 ]
  

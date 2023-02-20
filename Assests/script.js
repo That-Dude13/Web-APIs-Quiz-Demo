@@ -12,6 +12,9 @@ var btnEl = document.createElement('div');
 var headEl = document.createElement('header');
 var mainEl = document.createElement('main');
 
+// Button variable
+var generateBtn = document.querySelector("")
+
 // Create ordered list
 var Oli1 = document.createElement('ol');
 var Oli2 = document.createElement('ol');
