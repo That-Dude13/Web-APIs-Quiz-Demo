@@ -20,21 +20,21 @@ var Oli4 = document.createElement('ol');
 
 // Appending tags and elements to HTML
 // Paragraphs 
-body.appendchild(pEl);
-body.appendchild(p2El);
-body.appendchild(p3El);
-body.appendchild(p4El);
-body.appendchild(p5El);
-body.appendchild(p6El);
-// List
-body.appendchild(Oli1);
-body.appendchild(Oli2);
-body.appendchild(Oli3);
-body.appendchild(Oli4);
-// Button
-body.appendchild(btnEl);
-// Header
-body.appendchild(headEl);
+// body.appendchild(pEl);
+// body.appendchild(p2El);
+// body.appendchild(p3El);
+// body.appendchild(p4El);
+// body.appendchild(p5El);
+// body.appendchild(p6El);
+// // List
+// body.appendchild(Oli1);
+// body.appendchild(Oli2);
+// body.appendchild(Oli3);
+// body.appendchild(Oli4);
+// // Button
+// body.appendchild(btnEl);
+// // Header
+// body.appendchild(headEl);
 
 
 // Creating text content for each quiz question
