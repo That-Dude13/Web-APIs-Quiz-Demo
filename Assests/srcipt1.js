@@ -1,3 +1,15 @@
+// // Display
+function ShowQuiz(){
+    var beginQuiz = 'beginQuiz';
+    var start = 'start';
+    
+         start = document.getElementById('#start');
+         beginQuiz = document.getElementById('#beginquiz');
+    }
+    
+        beginQuiz.addEventListener('click', ('#start'));
+        start(style.display) = 'none'
+
 
 // Quiz Questions 
 let Question1 = Q1 
@@ -5,17 +17,6 @@ let Question2 = Q2
 let Question3 = Q3
 let Question4 = Q4
 let Question5 = Q5
-
-
-
-
-//document.getElementById(button).addEventListener('click', ("") );
-
-let button = btn
-document.querySelector('#header'); //element created for timer 
-document.querySelector('.time'); //element created for timer 
-//document.querySelector(main); //element created for timer 
-//document.querySelector(button); //Buttons to be used throughout quiz 
 document.querySelector('.container'); //contains quiz question elements
 document.querySelector('Q1'); // Quiz question 1 
 document.querySelector('Q2'); // Quiz question 2 
@@ -23,18 +24,15 @@ document.querySelector('Q3'); // Quiz question 3
 document.querySelector('Q4'); // Quiz question 4 
 document.querySelector('Q5'); // Quiz question 5
 
-// // Display
-function ShowQuiz(){
-var beginQuiz = 'beginQuiz';
-var start = 'start';
 
-     start = document.querySelector('#start');
-     beginQuiz = document.querySelector('#beginquiz');
-}
+// Quiz question variables 
+let tilte = tilte
+let choices = choices
+let answers = answers
 
-    beginQuiz.addEventListener('click', ('#start'));
-    start(style.display) = 'none'
-
+document.getElementById('title'); //Quiz quetions
+document.getElementById('choices'); //Quiz choices
+document.getElementById('answers'); //Quiz answers
 
 const questions = [
     {
@@ -69,12 +67,3 @@ for (i=0; i<questions.length; i++){
     console.log("title",questions[i].title);
     questionEl.textContent=questions[i].title;
 }
-
-// Quiz question variables 
-let tilte = tilte
-let choices = choices
-let answers = answers
-
-document.getElementById('title'); //Quiz quetions
-document.getElementById('choices'); //Quiz choices
-document.getElementById('answers'); //Quiz answers
