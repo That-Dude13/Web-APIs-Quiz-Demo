@@ -1,39 +1,90 @@
-// // Display
+// Display
 function ShowQuiz(){
-    var beginQuiz = 'beginQuiz';
-    var start = 'start';
-    
-         start = document.getElementById('#start');
-         beginQuiz = document.getElementById('#beginquiz');
-    }
+    let beginQuiz = document.getElementById('#beginquiz');
+    let start = document.getElementById('#start')
     
         beginQuiz.addEventListener('click', ('#start'));
         start(style.display) = 'none'
-
+    // Button behavior
+}
+      
 
 // Quiz Questions 
 let Question1 = Q1 
+function Q1 (){
+    document.querySelector('Q1');
+}
 let Question2 = Q2
+function Q2 (){
+    document.querySelector('Q2');
+}
 let Question3 = Q3
+function Q3 (){
+    document.querySelector('Q3');
+}
 let Question4 = Q4
+function Q4 (){
+    document.querySelector('Q4');
+}
 let Question5 = Q5
-document.querySelector('.container'); //contains quiz question elements
-document.querySelector('Q1'); // Quiz question 1 
-document.querySelector('Q2'); // Quiz question 2 
-document.querySelector('Q3'); // Quiz question 3 
-document.querySelector('Q4'); // Quiz question 4 
-document.querySelector('Q5'); // Quiz question 5
+function Q5 (){
+    document.querySelector('Q5');
+}
+document.querySelector('.container'); 
+
+//Quiz Choices
+let Choices1 = C1 
+function C1 (){
+    document.querySelector('C1');
+}
+let Choices2 = C2 
+function C2 (){
+    document.querySelector('C2');
+}
+let Choices3 = C3
+function C3 (){
+    document.querySelector('C3');
+}
+let Choices4 = C4 
+function C4 (){
+    document.querySelector('C4');
+}
+let Choices5 = C5 
+function C5 (){
+    document.querySelector('C5');
+}
+
+// Quiz Answers
+let Answers1 = A1
+function A1 (){
+    document.querySelector('A1');
+}
+let Answers2 = A2
+function A2 (){
+    document.querySelector('A2');
+}
+let Answers3 = A3
+function A3 (){
+    document.querySelector('A3');
+}
+let Answers4 = A4
+function A4 (){
+    document.querySelector('A4');
+}
+let Answers5 = A5
+function A5 (){
+    document.querySelector('A5');
+}
+//contains quiz question elements
+
 
 
 // Quiz question variables 
-let tilte = tilte
-let choices = choices
-let answers = answers
+let tilte = document.getElementById('#title'); //Quiz quetions
+let choices = document.getElementById('#choices') ;//Quiz quetions
+let answers = document.getElementById('#answers'); //Quiz answers
 
-document.getElementById('title'); //Quiz quetions
-document.getElementById('choices'); //Quiz choices
-document.getElementById('answers'); //Quiz answers
-
+// Quiz that will loop
 const questions = [
     {
         title: 'Commonly used data types DO NOT include:',
@@ -63,7 +114,19 @@ const questions = [
     },
 ];
 
+// For loop for questions
 for (i=0; i<questions.length; i++){
     console.log("title",questions[i].title);
-    questionEl.textContent=questions[i].title;
+    Q1.textContent=questions[i].title;
 }
+// For loop for choices
+for (i=0; i<questions.length; i++){
+    console.log("choices",questions[i].choices);
+    C1.textContent=questions[i].choices;
+}
+// For loop for choices
+for (i=0; i<questions.length; i++){
+    console.log("answer",questions[i].answer);
+    A1.textContent=questions[i].answer;
+}
+
