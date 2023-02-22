@@ -123,6 +123,47 @@ const questions = [
     },
 ];
 
+var index = 0; //starts at 0, and goes up to questions.length 
+
+function showQuiz(){ //is going to be called display quiz questions either when quiz is started or once answer is selcelted.
+    // we are going to check the index of the current question
+    //  create queryselectors for the following quizanswer buttons
+    var button1 = document.getElementById('quizAnswers1');
+    var button2 = document.getElementById('quizAnswers2');
+    var button3 = document.getElementById('quizAnswers3');
+    var button4 = document.getElementById('quizAnswers4');
+    // display the question based off of the choices from the question
+    var  currentQuestion = questions[index];
+    for(var i=0; i<4; i ++){ //iterate chocies array to display buttons
+         var currentbutton = document.getElementById('quizAnswers'+i);
+         currentbutton.textContent = currentQuestion.choices[i];
+    }
+   
+   
+    // display the current question to HTML
+    var  currentQuestion = questions[index];
+    // if(correct){
+        // score ++ or time -=10
+    
+    // }
+    // add to index; 
+    index++
+
+    // if(index> questions.length){
+//          end quiz()
+    // }
+
+    showQuiz
+    }
+
+
+
+
+function checkAnswer(){
+    // this function is going to compare the selected answer to the correct one of currentQuestion
+
+}
+
 // For loop for questions
 for (i=0; i<questions.length; i++){
     console.log("title",questions[i].title);
@@ -140,3 +181,4 @@ for (i=0; i<questions.length; i++){
 }
 
 let FirstQuestion = "Q"
+
