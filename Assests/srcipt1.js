@@ -3,9 +3,18 @@ function ShowQuiz(){
     let beginQuiz = document.getElementById('#beginquiz');
     let start = document.getElementById('#start')
     
-        beginQuiz.addEventListener('click', ('#start'));
-        start(style.display) = 'none'
-    // Button behavior
+    beginQuiz.addEventListener('click', ('#start'));
+
+    if( beginQuiz.style.display==='none'){
+         beginQuiz.style.display = 'block';
+    } else {
+        beginQuiz.style.disply = 'none';
+    }
+
+
+    //     beginQuiz.addEventListener('click', ('#start'));
+    //     start(style.display) = 'none'
+    // // Button behavior
 }
       
 
@@ -130,3 +139,4 @@ for (i=0; i<questions.length; i++){
     A1.textContent=questions[i].answer;
 }
 
+let FirstQuestion = "Q"
