@@ -1,4 +1,6 @@
 // Quiz that will loop
+var startButton= document.getElementById('beginQuiz');
+console.log(startButton)
 const questions = [
     {
         title: 'Commonly used data types DO NOT include:',
@@ -30,23 +32,29 @@ const questions = [
 
 var index = 0; //starts at 0, and goes up to questions.length 
 
-function showQuiz(){ //is going to be called display quiz questions either when quiz is started or once answer is selcelted.
+function showQuiz(event){ //is going to be called display quiz questions either when quiz is started or once answer is selcelted.
     // we are going to check the index of the current question
     //  create queryselectors for the following quizanswer buttons
+    event.preventDefault();
+    
     var button1 = document.getElementById('quizAnswers1');
+    console.log(button1)
     var button2 = document.getElementById('quizAnswers2');
     var button3 = document.getElementById('quizAnswers3');
     var button4 = document.getElementById('quizAnswers4');
     // display the question based off of the choices from the question
     var  currentQuestion = questions[index];
     for(var i=0; i<4; i ++){ //iterate chocies array to display buttons
-         var currentbutton = document.getElementById('quizAnswers'+i);
+         var currentbutton = document.getElementById(`quizAnswers${i+1}`);
+         console.log(currentbutton)
          currentbutton.textContent = currentQuestion.choices[i];
+         currentbutton.style['display'] = 'block'
+
     }
    
    
     // display the current question to HTML
-    var  currentQuestion = questions[index];
+  
     // if(correct){
         // score ++ or time -=10
     
@@ -66,5 +74,7 @@ function showQuiz(){ //is going to be called display quiz questions either when 
 
 function checkAnswer(){
     // this function is going to compare the selected answer to the correct one of currentQuestion
-
+index++
+showQuiz()
 }
+startButton.addEventListener('click', showQuiz )

@@ -1,19 +1,19 @@
-.btns .choices button {
+ .choices {
     background-color: purple; /* Purple background */
     border: 1px solid purple; /* Purple border */
     color: white; /* White text */
     padding: 10px 24px; /*  padding */
     cursor: pointer; /* Pointer/hand icon */
     width: 50%; /* Set width */
-    display: block; /* Make the buttons appear below each other */
+    display: none; /* Make the buttons appear below each other */
   }
   
-  .btns .choices button:not(:last-child) {
+   .choices button:not(:last-child) {
     border-bottom: none; /* Prevent double borders */
   }
   
   /* Add a background color on hover */
-  .btns .choices button:hover {
+  .choices button:hover {
     background-color: plum;
   }
 
