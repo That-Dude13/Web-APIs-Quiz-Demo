@@ -52,20 +52,20 @@ function showQuiz(event){ //is going to be called display quiz questions either 
 
     }
    
-   
-    // display the current question to HTML
+    var timeleft = 50;
+    var quizTimer = setInterval(function(){
+      if(timeleft <= 0){
+        clearInterval(quizTimer);
+        document.getElementById("countdown").innerHTML = "Finished";
+      } else {
+        document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
+      }
+      timeleft -= 1;
+    }, 1000);
+
+
   
-    // if(correct){
-        // score ++ or time -=10
-    
-    // }
-    // add to index; 
-    index++
-
-    // if(index> questions.length){
-//          end quiz()
-    // }
-
+   
     showQuiz
     }
 
