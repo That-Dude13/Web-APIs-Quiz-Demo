@@ -52,7 +52,12 @@ function showQuiz(event){ //is going to be called display quiz questions either 
 
     }
    
+   function timer(){
+    event.preventDefault
+   }
+   timer(event.preventDefault)
     var timeleft = 50;
+
     var quizTimer = setInterval(function(){
       if(timeleft <= 0){
         clearInterval(quizTimer);
